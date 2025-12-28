@@ -1,0 +1,85 @@
+body {
+    margin: 20px auto;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    @include title-font;
+    font-size: $h1;
+}
+
+h2 {
+    @include title-font;
+    font-size: $h2;
+}
+
+h3 {
+    @include title-font;
+    font-size: $h3;
+}
+
+p {
+    font-size: $text;
+    color: $text-muted;
+    line-height: 1.6;
+}
+
+small {
+    font-size: 0,8rem;
+    text-align: center;
+    color: white;
+}
+
+.btn-primary {
+    @include button-primary;
+    font-size: 1.8rem;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10rem;
+}
+
+.btn-secondary {
+    @include button-secondary;
+    font-size: 1.8rem;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 5rem;
+    margin-top: 10rem;
+}
+
+.title-center {
+    text-align: center !important;
+    margin-top: 1.25rem;
+    color: $text-main;
+    margin-bottom: 3rem;
+}
+
+.title-hero {
+  margin-bottom: 10rem;
+}
+
+.subtitle-hero {
+    text-align: center !important;
+    margin-top: 1.25rem;
+}
+
+.text {
+    color: $text-main;
+    text-align: center;
+}
+
+.title-card {
+    text-align: center !important;
+    margin-top: 1.25rem;
+    color: $text-main;
+    margin-bottom: 1.5rem;
+}
+
+.btn-pricing {
+    @include button-primary;
+    padding: 15px;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
