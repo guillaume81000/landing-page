@@ -1,24 +1,22 @@
 .cards-section {
   margin: 0 auto;
-  padding: 50px;
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  padding: $section-padding;
+  background: $bg-section-1;
 }
 
 .section-title {
   text-align: center;
-  font-size: 3rem;
-  font-weight: 800;
-  color: #ffffff;
+  font-size: $h2;
+  font-weight: $title-weight;
+  color: $title-main;
   margin-bottom: 1.5rem;
 }
 
 .section-subtitle {
   text-align: center;
-  font-size: 1.55rem;
-  color: #ffffff;
+  font-size: $h3;
+  color: $title-main;
   margin-bottom: 3rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .cards-grid {
@@ -28,13 +26,11 @@
 }
 
 .card {
-  background: white;
+  background: $bg-main;
   border-radius: 16px;
   padding: 40px 32px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 10px 20px rgba(0, 0, 0, 0.05);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
 }
 
 .card::before {
@@ -69,7 +65,7 @@
   justify-content: center;
   margin-bottom: 24px;
   font-size: 28px;
-  color: white;
+  color: $title-main;
 }
 
 .card:nth-child(2) .card-icon {
@@ -85,15 +81,14 @@
 }
 
 .card-title {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: $h3;
+  font-weight: $title-weight;
   color: #1a202c;
   margin-bottom: 12px;
 }
 
 .card-description {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: $text;
   color: #4a5568;
   margin-bottom: 24px;
 }
@@ -101,8 +96,8 @@
 .card-link {
   display: inline-flex;
   align-items: center;
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: $text;
+  font-weight: $title-weight;
   color: #667eea;
   text-decoration: none;
   transition: all 0.2s ease;

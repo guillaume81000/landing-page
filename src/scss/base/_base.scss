@@ -1,21 +1,16 @@
 body {
-    margin: 20px auto;
-    padding: 20px;
     font-family: 'Inter', sans-serif;
 }
 
 h1 {
-    @include title-font;
     font-size: $h1;
 }
 
 h2 {
-    @include title-font;
     font-size: $h2;
 }
 
 h3 {
-    @include title-font;
     font-size: $h3;
 }
 
@@ -25,43 +20,42 @@ p {
     line-height: 1.6;
 }
 
-small {
+.small {
     font-size: 0,8rem;
-    text-align: center;
-    color: white;
+    color: $title-main;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-primary {
-    font-size: 1.8rem;
-    padding: 15px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    font-size: $btn-font-size;
+    padding: $btn-padding;
+    box-shadow: $btn-shadow;
     margin-top: 10rem;
 }
 
 .btn-secondary {
-    @include button-secondary;
-    font-size: 1.8rem;
-    padding: 15px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    font-size: $btn-font-size;
+    padding: $btn-padding;
+    box-shadow: $btn-shadow;
     margin-left: 5rem;
     margin-top: 10rem;
 }
 
 .btn-pricing {
-    padding: 15px;
-    font-size: 1.8rem;
+    padding: $btn-padding;
+    font-size: $btn-font-size;
+    box-shadow: $btn-shadow;
     margin-top: 2rem;
     margin-left: 5rem;
 }
 
 
 .divider-line {
-  width: 80%;
   box-shadow: 1px, 1px, 1px;
   margin: auto;
   height: 0.3rem;
   background: black;
-  max-width: 1400px;
 }
 
 .reveal {

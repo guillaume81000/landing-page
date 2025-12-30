@@ -1,59 +1,42 @@
 .testimonials-section {
   margin: 0 auto;
-  padding: 50px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: $section-padding;
+  background: $bg-section-2;
   position: relative;
   overflow: hidden;
 }
 
-/* Motif de fond subtil */
-.testimonials-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: radial-gradient(circle at 20px 20px, rgba(102, 126, 234, 0.03) 1px, transparent 1px);
-  background-size: 40px 40px;
-  pointer-events: none;
-}
-
-/* Conteneur de contenu */
 .testimonials-content {
   position: relative;
   z-index: 1;
 }
 
-/* En-tête de section */
 .testimonials-header {
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 2rem;
 }
 
 .testimonials-title {
-  font-size: 3rem;
-  font-weight: 800;
+  font-size: $h2;
+  font-weight: $title-weight;
   color: #ffffff;
   letter-spacing: -0.5px;
 }
 
 .testimonials-subtitle {
-  font-size: 1.25rem;
+  font-size: $h3;
   color: #ffffff;
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.7;
 }
 
-/* Grille de témoignages */
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
 
-/* Carte de témoignage */
 .testimonial-card {
   background: white;
   border-radius: 24px;
@@ -63,26 +46,6 @@
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-}
-
-/* Effet de dégradé subtil en arrière-plan */
-.testimonial-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-}
-
-.testimonial-card:nth-child(2)::before {
-  background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
-}
-
-.testimonial-card:nth-child(3)::before {
-  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
 }
 
 .testimonial-card:hover {
@@ -90,7 +53,6 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
-/* Icône de guillemets */
 .quote-icon {
   width: 50px;
   height: 50px;
@@ -102,8 +64,7 @@
   margin-bottom: 24px;
   font-size: 24px;
   color: white;
-  font-weight: 700;
-  flex-shrink: 0;
+  font-weight: $title-weight;
 }
 
 .testimonial-card:nth-child(2) .quote-icon {
@@ -114,9 +75,8 @@
   background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
-/* Contenu du témoignage */
 .testimonial-text {
-  font-size: 1.05rem;
+  font-size: $text;
   line-height: 1.75;
   color: #2d3748;
   margin-bottom: 28px;
@@ -141,14 +101,12 @@
   background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
 }
 
-/* Section auteur */
 .testimonial-author {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-/* Avatar */
 .author-avatar {
   width: 56px;
   height: 56px;
@@ -159,7 +117,6 @@
   flex-shrink: 0;
 }
 
-/* Infos auteur */
 .author-info {
   flex: 1;
 }
@@ -178,7 +135,6 @@
   display: block;
 }
 
-/* Étoiles de notation */
 .testimonial-rating {
   display: flex;
   gap: 4px;
@@ -191,7 +147,6 @@
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* Badge optionnel (ex: "Client vérifié") */
 .verified-badge {
   position: absolute;
   top: 20px;
@@ -203,13 +158,13 @@
   background: rgba(102, 126, 234, 0.1);
   border-radius: 20px;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: $title-weight;
   color: #667eea;
 }
 
 .verified-badge::before {
   content: "✓";
-  font-weight: 700;
+  font-weight: $title-weight;
 }
 
 /* Responsive */
