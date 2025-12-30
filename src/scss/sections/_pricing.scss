@@ -1,0 +1,72 @@
+.pricing-section {
+  margin: 0 auto;
+  padding: 50px 20px 20px 20px;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.pricing-footer-text {
+  margin-top: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.pricing-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-buttons .btn-primary{
+  margin-top: 2rem;
+}
+
+.pricing-section .card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #111;
+  letter-spacing: -0.01em;
+}
+
+.pricing-section .card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-section .card li {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-pricing {
+  background-color: #F46184;
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border: 1px 1px solid #F46184;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-pricing:hover {
+  background-color: rgb(240.6804733728, 49.3195266272, 94.8816568047);
+}
+.btn-pricing {
+  padding: 15px;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+}

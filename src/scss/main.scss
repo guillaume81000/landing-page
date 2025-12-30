@@ -1,6 +1,7 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import '_variables.scss';
-@import '_mixins.scss';
-@import '_base.scss';
-@import '_layout.scss';
-@import '_components.scss';
+@import 'utilities/variables';
+@import 'base/base';
+@import 'sections/pricing';
+@import 'sections/cards-section';
+@import 'sections/features-section';
+@import 'sections/testimonials';
+@import 'sections/hero';

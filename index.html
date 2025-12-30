@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <head>
     <meta charset="utf-8">
@@ -5,37 +6,41 @@
     <link rel="stylesheet" href="src/css/main.css">
 </head>
 <body>
-    <section class="hero hero--img container reveal">
-        <img class="hero__img" src="src/assets/images/imghero.jpg" alt="image of reports">
-        <div class="hero__content">
-            <h1 class="title-hero">Clear Reports For Better Decisions.</h1>
-            <h2 class="subtitle-hero">Reportly helps B2B teams turn their daily work into clear, shareable reports — without complex tools or manual spreadsheets.</h2>
-            <button class="btn-primary">Start Free Trial</button>
-            <button class="btn-secondary">See how it works</button>
-        </div>   
-    </section>
-    <div class="divider-line"></div>
-    <section class="cards-section reveal">
-        <h2 class="section-title">Reporting Shouldn't Be This Painful</h2>
-        <h3 class="section-subtitle">Most teams spend too much time collecting data instead of focusing on insights.</h3>
-        <div class="cards-grid">
-                <div class="card reveal">
-                    <div class="card-icon">❌</div>
-                    <h4 class="card-title">Tasks and progress are spread across multiple tools</h4>
-                </div>
-                <div class="card reveal">
-                    <div class="card-icon">⚠️</div>
-                    <h4 class="card-title">Weekly reports are built manually, again and again</h4>
-                </div>
-                <div class="card reveal">
-                    <div class="card-icon">😤</div>
-                    <h4 class="card-title">Managers lack a clear overview of what’s really happening</h4>
-                </div>
-                <div class="card reveal">
-                    <div class="card-icon">💸</div>
-                    <h4 class="card-title">Clients ask for updates that are hard to explain clearly</h4>
-                </div>
+    <section class="hero-section">
+        <div class="hero-shape hero-shape-1"></div>
+        <div class="hero-shape hero-shape-2"></div>
+        <div class="hero-shape hero-shape-3"></div>
+        <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">✨ New : Revolutionary features</div>
+            
+            <h1 class="hero-title">
+            Clear Reports For <span class="gradient-text">Better Decisions</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+            Reportly helps B2B teams turn their daily work into clear, shareable reports - without complex tools or manual spreadsheets.
+            </p>
+
+            <div class="hero-buttons">
+            <button class="btn-primary reveal">Start free trial</button>
+            <button class="btn-secondary reveal">See how it works</button>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to discover</span>
+            <div class="scroll-arrow"></div>
+        </div>
     </section>
     <div class="divider-line"></div>
     <section class="features-section reveal">
@@ -92,7 +97,7 @@
                 </ul>
             </div>
             <div class="pricing-buttons">
-                <button class="btn-pricing reveal">Start Free Trial</button>
+                <button class="btn-primary reveal">Start Free Trial</button>
             </div>
         </section>
     <div class="divider-line"></div>
@@ -258,7 +263,7 @@
             <h3 class="pricing-footer-text">Join thousands of teams who use Reportly to stay aligned and focused.</h3>
         </div>
         <div class="pricing-buttons">
-            <button class="btn-pricing">Start Free Trial</button>
+            <button class="btn-primary">Start Free Trial</button>
         </div>
         <p class="small">No credit card required</p>
     </section>
@@ -279,4 +284,42 @@
             observer.observe(section);
         });
     </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>

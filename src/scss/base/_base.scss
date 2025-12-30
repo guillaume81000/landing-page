@@ -32,7 +32,6 @@ small {
 }
 
 .btn-primary {
-    @include button-primary;
     font-size: 1.8rem;
     padding: 15px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -48,38 +47,29 @@ small {
     margin-top: 10rem;
 }
 
-.title-center {
-    text-align: center !important;
-    margin-top: 1.25rem;
-    color: $text-main;
-    margin-bottom: 3rem;
-}
-
-.title-hero {
-  margin-bottom: 10rem;
-}
-
-.subtitle-hero {
-    text-align: center !important;
-    margin-top: 1.25rem;
-}
-
-.text {
-    color: $text-main;
-    text-align: center;
-}
-
-.title-card {
-    text-align: center !important;
-    margin-top: 1.25rem;
-    color: $text-main;
-    margin-bottom: 1.5rem;
-}
-
 .btn-pricing {
-    @include button-primary;
     padding: 15px;
     font-size: 1.8rem;
     margin-top: 2rem;
     margin-left: 5rem;
+}
+
+
+.divider-line {
+  width: 80%;
+  box-shadow: 1px, 1px, 1px;
+  margin: auto;
+  height: 0.3rem;
+  background: black;
+  max-width: 1400px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
